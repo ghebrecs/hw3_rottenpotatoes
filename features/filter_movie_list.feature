@@ -42,4 +42,6 @@ Scenario: no ratings selected
 
 Scenario: all ratings selected
   # see assignment
-  
+  When I check all the ratings 
+  When I press "ratings_submit" 
+  Then I should see all of the movies 
